@@ -1,7 +1,7 @@
 //import {writeFile, readFile} from 'fs'
 //import fs from 'fs'
-import * as fs from 'fs';
-var liveServer = require("live-server");
+//import * as fs from 'fs';
+/*var liveServer = require("live-server");
 
 var params = {
     port: 8181, // Set the server port. Defaults to 8080.
@@ -12,18 +12,15 @@ var params = {
     file: "index.html", // When set, serve this file for every 404 (useful for single-page applications)
     wait: 1000 // Waits for all changes, before reloading. Defaults to 0 sec.
 };
-liveServer.start(params);
-
-fs.readFile('./usernames.json', 'utf8', function(err, data){
-    console.log(data);
-});
-
+liveServer.start(params);*/
+fetch('http://localhost:8818/')
+        .then(response => response.json())
+        .then(data => console.log(data));
 document.onload = function () {
     console.log("On load");
-    //fs.writeFile('./usernames.json', json, 'utf8');
-    readFile('./usernames.json', 'utf8', function(err, data){
-        console.log(data);
-    });
+    fetch('http://localhost:8818/')
+        .then(response => response.json())
+        .then(data => console.log(data));
 };
 
 let usernames = {};
@@ -58,19 +55,19 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         loginForm.classList.add("form--hidden");
         createAccountForm.classList.remove("form--hidden");
-        console.log("B"); 
+        console.log("B");
     });
 
     document.querySelector("#linkLogin").addEventListener("click", e => {
         e.preventDefault();
         loginForm.classList.remove("form--hidden");
         createAccountForm.classList.add("form--hidden");
-        console.log("C"); 
+        console.log("C");
     });
 
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
-        console.log("A"); 
+        console.log("A");
         // Perform your AJAX/Fetch login
         let username = usernameForm.value; //usernameForm.value;
         let password = passwordForm.value;

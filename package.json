@@ -1,15 +1,15 @@
 {
   "dependencies": {
-    "browserify": "^17.0.0",
-    "browserify-fs": "^1.0.0"
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "live-server": "^1.2.1"
   },
   "name": "login-signup-form-master",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "live-server"
   },
   "author": "",
   "license": "ISC",
