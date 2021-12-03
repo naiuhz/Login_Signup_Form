@@ -1,1 +1,15 @@
-{"ian":1}
+{
+    "ian":
+    {
+        "password":"7777",
+        "address":"654 Yonge Street",
+        "firstName": "Ian",
+        "lastName": "Zhu"
+    },
+    "nick":
+    {
+        "password":"1234567",
+        "address":"321 Yonge Street"
+    }
+
+}
