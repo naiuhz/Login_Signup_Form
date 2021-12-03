@@ -1,23 +1,13 @@
 {
   "dependencies": {
-<<<<<<< HEAD
-    "browserify": "^17.0.0",
-    "browserify-fs": "^1.0.0",
-    "mongodb": "^4.2.1"
-=======
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "live-server": "^1.2.1"
->>>>>>> refs/remotes/origin/main
   },
   "name": "login-signup-form-master",
   "version": "1.0.0",
   "main": "index.js",
-<<<<<<< HEAD
-  "type": "module",
-=======
   "devDependencies": {},
->>>>>>> refs/remotes/origin/main
   "scripts": {
     "test": "live-server"
   },
