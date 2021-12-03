@@ -1,5 +1,3 @@
-
-
 "use strict";
 
 const express = require('express');
@@ -17,3 +15,5 @@ app.listen(PORT, () => {
 app.get("/", async (req, res) => {
     return res.sendFile(path.join(__dirname, "./src/usernames.json"));
 });
+
+// http://localhost:8818/
